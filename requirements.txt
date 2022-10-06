@@ -1,0 +1,14 @@
+Flask
+numpy
+openpyxl
+pandas
+mammoth
+socketlabs
+socketlabs-injectionapi
+gunicorn
+pyotp
+pymongo
+pysqlite3
+paystackapi
+sqlalchemy
+psycopg2

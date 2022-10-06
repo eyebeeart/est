@@ -1,0 +1,61 @@
+body{
+    background-color:grey;
+    background-image: url("../static/image/breno.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav ul li{
+    display: inline-block;
+    margin-bottom: -20px; 
+    font-size: 20px ;
+}
+
+
+ li a{
+    color:white;
+    text-decoration: none; 
+}
+.nav{
+    margin-left: 50px;
+    float:right;
+    margin-top: -10px;
+}
+.nav ul li a{
+    padding: 50px;
+
+}
+a:hover{
+    color: gold;
+}
+#search{
+    margin-top: 400px;
+    margin-left: 600px;
+    padding-left: 20px;
+    padding-right: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 80px;
+}
+.logo{
+    position: absolute;
+    margin-top: 380px;
+    margin-left:-60px;
+}
+h1{
+    color: white;
+    text-align: center;
+    top: 200px;
+    left: 680px;
+    font-family: monospace;
+    position: absolute;
+    font-size: 40px;
+
+}
+p{
+    color: white;
+    text-align: center;
+    top: 330px;
+    left: 450px;
+    position: absolute;
+    font-size: 23px;
+}

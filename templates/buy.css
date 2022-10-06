@@ -1,0 +1,37 @@
+.column{
+    float: left;
+    width: 33.33;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    padding-left: 30px;
+}
+p{
+    font-size: 20px;
+    padding-left: 150px;
+}
+.nav ul li{
+    display: inline-block;
+    margin-bottom: -20px; 
+    font-size: 25px ;
+}
+
+
+ li a{
+    color:black;
+    text-decoration: none; 
+}
+.nav{
+    margin-left: 420px;
+    margin-top: -10px;
+}
+.nav ul li a{
+    padding: 50px;
+
+}
+a:hover{
+    color: gold;
