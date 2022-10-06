@@ -37,4 +37,4 @@ def registration():
 
 
 
-app.run(debug=True)
+app.run()
