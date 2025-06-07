@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> REAL ESTATE</title>
+    <link rel = "stylesheet" href ="rent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+         <nav class="nav">
+            <div class="logo-links">
+                 <div class="logodiv">
+                     <img class="logo" src="static/image/logo.png" alt="logo">
+                 </div>
+             
+                 <a href="index.html" class="link">Home</a>
+                 <a href="buy.html" id="buy-link" class="link">Buy</a>
+                 <a href="rent.html" id="rent-link" class="active link">Rent </a>
+                 <a href="sell.html"> Sell</a>
+                 <a href="#">Commercial</a>
+                 <a href="#">Agents</a>
+                 <a href="#">Neighborhoods</a>
+                 <a href="#">Blog</a>
+                 <a href="#">Contact</a>
+                 <a href="help.html">Help </a>
+            
+            </div>
+            
+            <div class="signup">
+                <button><a href="login.html">sign in </a></button>
+                <a>sign up</a>
+            </div>
+        </nav>
+
+        <div id="buy-dropdown" class="drop">
+            <div class="firstpart">
+                <ul>
+                    <li><a href="">Property for sale</a></li>
+                    <li><a href="">Lands for sale</a></li>
+                    <li><a href="">Houses for sale</a></li>
+                    <li><a href="">Flats & Apartments for sale</a></li>
+                    <li><a href="">All Property for sale</a></li>
+                </ul>
+            </div>
+            <div class="secondpart"></div>
+        </div>
+
+        <div id="rent-dropdown" class="drop">
+            <div class="firstpart">
+                <ul>
+                    <li><a href="">Property for rent</a></li>
+                    <li><a href="">Lands for rent</a></li>
+                    <li><a href="">Houses for rent</a></li>
+                    <li><a href="">Flats & Apartments for rent</a></li>
+                    <li><a href="">All Property for rent</a></li>
+                </ul>
+            </div>
+            <div class="secondpart"></div>
+        </div>
+
+        
+
+
+        <script>
+                function setDropdown (linkId, dropDownId){
+                    const dropDown = document.getElementById(dropDownId);
+                    const link = document.getElementById(linkId);
+                    
+                    link.addEventListener("mouseenter", ()=> {
+                        dropDown.classList.add("show");
+                    });
+                
+                    link.addEventListener("mouseleave", ()=> {
+                        if (!dropDown.matches(":hover") && !link.matches(":hover")){
+                            dropDown.classList.remove("show");
+                        }
+                                                                    
+                        dropDown.addEventListener("mouseleave", ()=>{
+                            dropDown.classList.remove("show");
+                        });
+                    });
+                }
+
+                setDropdown("buy-link", "buy-dropdown");
+                setDropdown("rent-link", "rent-dropdown");
+            
+        </script>
+    </body>
+</html>

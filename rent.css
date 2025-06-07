@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.63), rgb(4, 0, 0, 0.97)),
+        url('static/image/10.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+     width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    width: 120px;
+}
+.logodiv{
+    margin-right: 20px;
+}
+
+.logo-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20px;
+    width: 100vw;
+    padding: 24px 0;
+    padding-bottom: 13px;
+    position: relative;
+    background-color: #ebe8e8;
+    top: 0;
+    position: sticky;
+}
+.nav a{
+    font-size: 16px;
+    color:rgb(0, 0, 0);
+    text-decoration: none; 
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+.nav a:hover{
+   color: rgb(0, 0, 0);
+   border-bottom: 2px solid rgb(0, 0, 0);
+   background-color: #c7c6c6;
+   border-radius: 8px;
+}
+
+.nav a.active{
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.signup{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.signup a {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 10px;
+}
+
+.signup a:hover {
+    color: rgb(0, 0, 0);
+   border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.signup a.active {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+button{
+    font-size: 16px;
+    padding: 12px 12px;
+    color: white;
+    background-color: rgb(130, 215, 130);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+button:hover{
+    background-color: rgb(86, 170, 86);
+    border-bottom: none;
+}
+.signup button a {
+    text-decoration: none;
+    color: white;
+}
+.signup button a:hover {
+    border-bottom: none;
+    background-color: transparent;
+}
+
+#buy-dropdown,
+#rent-dropdown {
+  width: 100vw;
+  align-items: center;
+  pointer-events: none;
+  background-color: #c7c6c6;
+  margin: 0;
+  padding: 16px 0;
+  padding-left: 310px;
+  opacity: 0;
+  height: 150px;
+  transform: translateY(-2px);
+  transition: all 0.5s ease-in;
+  position: absolute;
+  z-index: 999;
+}
+
+#buy-dropdown.show,
+#rent-dropdown.show {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+#rent-dropdown{
+    padding-left: 368px;
+}
+
+.firstpart ul {
+    list-style: none;
+}
+
+.firstpart ul li {
+    color: rgb(0, 0, 0);
+    padding: 2px 0;
+}
+
+.firstpart ul li a {
+    color: rgb(0, 0, 0);
+    padding: 2px 0;
+    text-decoration: none;
+}
+
+.firstpart ul li a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+

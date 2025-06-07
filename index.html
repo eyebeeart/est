@@ -2,34 +2,184 @@
 <html>
 <head>
     <title> REAL ESTATE</title>
-    <link rel = "stylesheet"  type="text/css" href ="../static/css/html.css">
+    <link rel = "stylesheet" href ="html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 
-    <body>
-       
-        <div class="nav">
+<body>
+         <nav class="nav">
+            <div class="logo-links">
+            <div class="logodiv">
+                <img class="logo" src="static/image/logo.png" alt="logo">
+            </div>
+
+            <a href="index.html" class="active link">Home</a>
+            <a href="buy.html" id="buy-link" class="link">Buy</a>
+            <a href="rent.html" id="rent-link" class="link">Rent </a>
+            <a href="sell.html"> Sell</a>
+            <a href="#">Commercial</a>
+            <a href="#">Agents</a>
+            <a href="#">Neighborhoods</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="help.html">Help </a>
             
-            <ul>
-                <li><a href={{'buy'}} >Buy</a></li>
-                <li><a href={{'rent'}}>Rent </a></li>
-                <li><a href="#"> Sell</a></li>
-                <li><a href={{'login'}}>Log in </a></li>
-                <li><a href="#">Help </a></li> 
-                
-            </ul>
+            </div>
+
+
+            <div class="signup">
+                <button><a href="login.html">sign in </a></button>
+                <a>sign up</a>
+            </div>
+        </nav>
+
+        <div id="buy-dropdown" class="drop">
+            <div class="firstpart">
+                <ul>
+                    <li><a href="">Property for sale</a></li>
+                    <li><a href="">Lands for sale</a></li>
+                    <li><a href="">Houses for sale</a></li>
+                    <li><a href="">Flats & Apartments for sale</a></li>
+                    <li><a href="">All Property for sale</a></li>
+                </ul>
+            </div>
+            <div class="secondpart"></div>
         </div>
+
+        <div id="rent-dropdown" class="drop">
+            <div class="firstpart">
+                <ul>
+                    <li><a href="">Property for rent</a></li>
+                    <li><a href="">Lands for rent</a></li>
+                    <li><a href="">Houses for rent</a></li>
+                    <li><a href="">Flats & Apartments for rent</a></li>
+                    <li><a href="">All Property for rent</a></li>
+                </ul>
+            </div>
+            <div class="secondpart"></div>
+        </div>
+
 
         <div class="body">
-            <h1>The Simplest<br>Way to Find Property</h1>
-            <p>A small river named Dudien flows by their place and supplies it with the necessary regeliafia it is a<br>paradisematic country,in which roasted parts </p>
-            <input id="search" type="text" placeholder="search location">
-            <img class="logo" src="../static/image/logo.png"  height="90px" width="90px" onmouseover="click();">
-
+            <div class="text">
+                <h1>The Simplest Way to Find Property</h1>
+                <p>Explore thousands of listings for apartments, houses, and commercial spaces in your area. Whether you're buying, renting, or investing, we make it easy to find the perfect property that fits your lifestyle and budget.</p>
+            </div>
+             <div class="search-wrapper">
+                  <input id="search" type="text" placeholder="Search location">
+                  <i class="fas fa-search"></i>
+             </div>  
         </div>
+
+
+        <div class="property-sample">
+            <div class="title">
+                <h2>Houses Around &#8358;15,000,000</h2>
+                <a href="">View More</a>
+            </div>
+
+            <div class="house-pics">
+                <div class="card">
+                    <div>
+                        <img src="static/image/12.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>3 Bedroom Flat</p>
+                        <h4>&#8358;15,000,000</h4>
+                        <p class="p">121 ezeagu street, ajegunle-apapa lagos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="static/image/15.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>3 Bedroom Flat</p>
+                        <h4>&#8358;17,550,000</h4>
+                        <p class="p">44, luman yusuf str., iledu, badagry, lagos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="static/image/13.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>3 Bedroom Flat</p>
+                        <h4>&#8358;14,800,000</h4>
+                        <p class="p">Oke ibadan Akobo Ibadan Oyo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="property-sample">
+            <div class="title">
+                <h2>Properties For Sale</h2>
+                <a href="">View More</a>
+            </div>
+
+            <div class="house-pics">
+                <div class="card">
+                    <div>
+                        <img src="static/image/19.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>Uncompleted storey building</p>
+                        <h4>&#8358;10,500,000</h4>
+                        <p class="p">121 ezeagu street, ajegunle-apapa lagos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="static/image/16.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>3 acres of land</p>
+                        <h4>&#8358;17,550,000</h4>
+                        <p class="p">44, luman yusuf str., iledu, badagry, lagos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="static/image/13.jpeg" alt="">
+                    </div>
+                    <div class="text">
+                        <p>3 Bedroom Flat</p>
+                        <h4>&#8358;14,800,000</h4>
+                        <p class="p">Oke ibadan Akobo Ibadan Oyo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <script>
-            var click = function(){
-            document.getElementById("search").style.display="none";
+             function setDropdown (linkId, dropDownId){
+                const dropDown = document.getElementById(dropDownId);
+                const link = document.getElementById(linkId);
+
+                link.addEventListener("mouseenter", ()=> {
+                    dropDown.classList.add("show");  
+                });
+            
+                link.addEventListener("mouseleave", ()=> {                    
+                    if (!dropDown.matches(":hover") && !link.matches(":hover")){
+                        dropDown.classList.remove("show");
+                    }
+
+                    dropDown.addEventListener("mouseleave", ()=>{
+                        dropDown.classList.remove("show");
+                    });
+                });
             }
+            
+            setDropdown("buy-link", "buy-dropdown");
+            setDropdown("rent-link", "rent-dropdown");
         </script>
     </body>
 
